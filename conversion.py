@@ -345,13 +345,13 @@ def diagnose_csv_format(csv_file_path, num_samples=5):
 
 
 # Ejemplo de uso
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Cambia estas rutas según tu configuración
     csv_file = "rawg_games.csv"  # Ruta a tu archivo CSV
     output_file = "videojuegos_dataset.ttl"  # Archivo TTL de salida
 
     # Procesa solo los primeros 1000 juegos para prueba (None para todos)
-    limit = 1000
+    limit = 50000
 
     try:
         # Primero ejecuta el diagnóstico
